@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emiliano · Versión Divertida 😎</title>
+  <title>Emiliano · Versión Especial 💕</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-  <!-- Barra: con enlace de regreso al portafolio profesional -->
   <nav class="navbar">
     <span class="logo">Emiliano 😎</span>
     <div class="nav-links">
@@ -43,17 +42,17 @@
     <p>Versión especial · Hecha con cariño por Emiliano para Silvana ❤️</p>
   </footer>
 
-  <!-- Tu saludador original, con todos tus mensajes divertidos intactos -->
   <script>
     function saludarPorNombre() {
       var nombre = document.getElementById("nombreUsuario").value;
+      var clave = nombre.toLowerCase().trim();
 
-      if (nombre === "") {
+      if (clave === "") {
         document.getElementById("saludo").textContent = "Bro ponte trucha escribe tu nombre!";
-      } else if (nombre === "Emiliano") {
-        document.getElementById("saludo").textContent = "¡Esposo de Silvana😌!";
-      } else if (nombre === "Silvana") {
-        document.getElementById("saludo").textContent = "Te amo ❤️, saludos al Ivancin pedorrin ";
+      } else if (clave === "emiliano") {
+        document.getElementById("saludo").textContent = "¡Esposo de Silvana 😌!";
+      } else if (clave === "silvana") {
+        document.getElementById("saludo").textContent = "Te amo ❤️, saludos al Ivancin pedorrin";
       } else {
         document.getElementById("saludo").textContent = "Que bien te ves " + nombre + " eres lo maximo bro";
       }
